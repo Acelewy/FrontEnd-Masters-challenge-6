@@ -28,24 +28,33 @@
 
 <body>
     <div class="card">
-        <div class="comp-name">
+        <div class="comp-name item1">
             <img src="./images/logo.svg" alt="base-apparel"> </div>
-        <div class="image">
+        <div class="image item2">
         </div>
-        <div class="text">
+        <div class="text item3">
             <p class="two">WE'RE<br>
                 <p class="one">COMING <br>SOON</p>
             </p>
             <p class="three">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals. Email Address</p>
         </div>
-        <div class="field">
-            <form class="example">
-                <input type="text" placeholder="Email Address">
-                <button class="buton" type="submit"><img class="fa-search" src="./images/icon-arrow.svg"></button>
+        <div class="field item4" novalidate>
+            <form class="example" id="form">
+                <div class="input-group">
+                    <input class="input" type="text" placeholder="Email Address">
+                    <img class="icon" src="./images/icon-error.svg" alt="Error">
+                    <button class="buton" type="submit"><img class="fa-search" src="./images/icon-arrow.svg"></button>
+
+                </div>
+
             </form>
+
         </div>
+        <small id="error-message" class="invalid-message item5">Please provide a valid email</small>
+
 
     </div>
+    <script src="index.js"></script>
 
 </body>
 
